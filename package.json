@@ -1,0 +1,27 @@
+{
+  "name": "fibonacci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olili27/tax-calculator-tdd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olili27/tax-calculator-tdd/issues"
+  },
+  "homepage": "https://github.com/olili27/tax-calculator-tdd#readme",
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "mocha": "^11.1.0"
+  }
+}

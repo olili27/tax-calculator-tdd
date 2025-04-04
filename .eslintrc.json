@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "airbnb-base",
+    "airbnb/whitespace"
+  ],
+  "rules":{
+    "quotes": ["warn", "double"],
+    "semi" :["error", "always"]
+  }
+}
