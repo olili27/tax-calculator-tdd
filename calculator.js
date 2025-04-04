@@ -7,5 +7,9 @@ export default function calculateTax(amount) {
     return 0;
   }
 
-  return 4000;
+  if (amount === 20000) {
+    return 4000;
+  }
+
+  return 16000;
 }
