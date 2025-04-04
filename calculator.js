@@ -3,13 +3,13 @@
  * @returns {number}
  */
 export default function calculateTax(amount) {
-  if (amount === 1) {
+  if (amount < 12000) {
     return 0;
   }
 
-  if (amount === 20000) {
-    return 4000;
+  if (amount > 36000) {
+    return (40 * amount) / 100;
   }
 
-  return 16000;
+  return (20 * amount) / 100;
 }

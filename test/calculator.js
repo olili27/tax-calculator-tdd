@@ -15,5 +15,9 @@ describe("Tax Calculator", () => {
     it("calculateTax(40000) should return 16000", () => {
       assert.strictEqual(calculateTax(40000), 16000);
     });
+
+    it("calculateTax(40000) should return 16000", () => {
+      assert.strictEqual(calculateTax(60000), 24000);
+    });
   });
 });
