@@ -32,4 +32,18 @@ describe("Tax Calculator", () => {
       );
     });
   });
+
+  describe("tax calculation with 0 and negative values", () => {
+    const msg = `Expect numbers between ${Number.MAX_VALUE}`;
+
+    it(`calculateTax(0) should throw RangeError: ${msg}`, () => {
+      assert.throws(
+        () => {
+          calculateTax(0);
+        },
+        RangeError,
+        msg
+      );
+    });
+  });
 });

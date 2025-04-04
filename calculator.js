@@ -12,8 +12,14 @@ function calculate(amount, taxRate) {
  * @returns {int | float}
  */
 export default function calculateTax(amount) {
+  const maximumAllowed = Number.MAX_VALUE;
+
   if (typeof amount !== "number") {
     throw new TypeError("Expect only positive numbers");
+  }
+
+  if (amount < 1 || amount > maximumAllowed) {
+    throw new RangeError(`Expect numbers between ${maximumAllowed}`);
   }
 
   if (amount < 12000) {
