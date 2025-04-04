@@ -42,7 +42,7 @@ describe("Tax Calculator", () => {
           calculateTax(0);
         },
         RangeError,
-        msg
+        msg,
       );
     });
   });

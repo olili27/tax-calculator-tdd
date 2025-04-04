@@ -34,4 +34,3 @@ export default function calculateTax(amount) {
 }
 
 // console.log(calculateTax("hello"));
-
