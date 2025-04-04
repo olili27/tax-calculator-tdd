@@ -19,7 +19,7 @@ export default function calculateTax(amount) {
   }
 
   if (amount < 1 || amount > maximumAllowed) {
-    throw new RangeError(`Expect numbers between ${maximumAllowed}`);
+    throw new RangeError(`Expect numbers with in 1 through ${maximumAllowed}`);
   }
 
   if (amount < 12000) {
