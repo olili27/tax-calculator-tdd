@@ -12,6 +12,10 @@ function calculate(amount, taxRate) {
  * @returns {int | float}
  */
 export default function calculateTax(amount) {
+  if (typeof amount !== "number") {
+    throw new TypeError("Expect only positive numbers");
+  }
+
   if (amount < 12000) {
     return calculate(amount, 0);
   }
@@ -22,3 +26,6 @@ export default function calculateTax(amount) {
 
   return calculate(amount, 20);
 }
+
+// console.log(calculateTax("hello"));
+

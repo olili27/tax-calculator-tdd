@@ -20,4 +20,16 @@ describe("Tax Calculator", () => {
       assert.strictEqual(calculateTax(60000), 24000);
     });
   });
+
+  describe("tax calculation with non-numeric values", () => {
+    it("calculateTax('hello') should throw TypeError: Expect only positive numbers", () => {
+      assert.throws(
+        () => {
+          calculateTax("hello");
+        },
+        TypeError,
+        "Expect only positive numbers",
+      );
+    });
+  });
 });
