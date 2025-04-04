@@ -5,6 +5,7 @@
   ],
   "rules":{
     "quotes": ["warn", "double"],
-    "semi" :["error", "always"]
+    "semi" :["error", "always"],
+    "import/extensions": "off"
   }
 }

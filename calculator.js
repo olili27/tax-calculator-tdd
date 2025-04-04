@@ -1,5 +1,4 @@
 /**
- * 
  * @param {number} amount - positive integer or float
  * @returns {number}
  */
